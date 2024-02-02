@@ -38,6 +38,6 @@ To create a C# console-based RPG with a battle system, inventory system, map sys
 #### [+50 pts.] Stretch Goals
 - [+10] Implement proper Encapsulation
 - [+10] Implement proper Abstraction
-- [+10] Support for Matrices of any size (2x2, 3x3, 4x4, etc.)
-- [+10] Support for Matrices of any numerical data type (int, float, double, etc.)
+- [+10] 
+- [+10] 
 - [+10] 
