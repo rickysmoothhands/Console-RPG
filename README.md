@@ -16,12 +16,12 @@ To create a C# console-based RPG with a battle system, inventory system, map sys
 ---
 
 ### Instructions
-
+There are a collection of videos on Schoology for you to follow along with in order to create your Console RPG. The videos are put in order of how you should watch them, since some of them build on each other, but generally, I try to keep each one as self-contained as possible. Each one goes over a different aspect of the Console RPG which will be graded separately from each other, as outlined below. If you want to add a story to your Console RPG, feel free, but it won't be part of the grade. I'm looking forward to seeing everyone's at the end of the unit! Also, if you don't feel like you need to follow along with the videos and want to challenge yourself to do at least some things without them, I'm just putting that out there.
 
 ---
 
 ### Grading Rubric
-
+Your Console RPG must have 8 unique systems in the game, each outlined below. Once all are complete, you will have a finished game that you can play and show off to your friends! Each of the 8 unique systems contributes 15 points to your total score of 120 points on this assignment. You get the points if the system is fully functional, without bugs or glitches. Make sure to test your code! Also, each one has an extra credit opportunity listed below (the point values that start with a +).
 
 #### [120 pts.] Mastery Goals
 - **[15]** Location System: The ability for the game to have different locations, each with a name and description. The game must store where the user currently is and let the player go to different locations.
@@ -34,5 +34,6 @@ To create a C# console-based RPG with a battle system, inventory system, map sys
     - **[+5]** Using lambdas/delegates to create an expandable Item System.
 - **[15]** Inventory System: The ability for the game to store what items the player has in their inventory.
 - **[15]** Shop System: The ability for the player to store how many coins they have and then be able to buy items in a shop using those coins.
+    - **[+5]** Use console colors to indiciate which items the player can or can't afford.
 - **[15]** Serialization System: The ability for the game to save and load the user's data by reading from a file. The user should be able to save and load data at any time.
     - **[+5]** At least 3 save slots.
