@@ -25,7 +25,9 @@ Your Console RPG must have 8 unique systems in the game, each outlined below. On
 
 #### [120 pts.] Mastery Goals
 - **[15]** Location System: The ability for the character to be able to travel to different locations in the game.
+    - **[+5]** A map the player can use to see how each location is connected.
 - **[15]** Entity System: A class for storing entity data like various stats, including name, health, attack, defense, etc.
+    - **[+5]** 
 - **[15]** Equipment System: The ability for entities to have equipment, including at least 1 weapon and piece of armor.
     - **[+5]** More types of equipment than just weapons and armor.
 - **[15]** Battle System: The ability for the game to start a battle with the player and various enemies.
@@ -33,6 +35,7 @@ Your Console RPG must have 8 unique systems in the game, each outlined below. On
 - **[15]** Item System: A class for storing item information like a name, description, effect, etc.
     - **[+5]** Using lambdas/delegates to create an expandable Item System.
 - **[15]** Inventory System: The ability for the game to store what items the player has in their inventory.
+    - **[+5]** 
 - **[15]** Shop System: The ability for the player to store how many coins they have and then be able to buy items in a shop using those coins.
     - **[+5]** Use console colors to indiciate which items the player can or can't afford.
 - **[15]** Serialization System: The ability for the game to save and load the user's data by reading from a file.
