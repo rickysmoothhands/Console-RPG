@@ -24,7 +24,7 @@ There are a collection of videos on Schoology for you to follow along with in or
 Your Console RPG must have 8 unique systems in the game, each outlined below. Once all are complete, you will have a finished game that you can play and show off to your friends! Each of the 8 unique systems contributes 15 points to your total score of 120 points on this assignment. You get the points if the system is fully functional, without bugs or glitches. Make sure to test your code! Also, each one has an extra credit opportunity listed below (the point values that start with a +).
 
 #### [120 pts.] Mastery Goals
-- **[15]** Location System: The ability for the game to have different locations, each with a name and description. The game must store where the user currently is and let the player go to different locations.
+- **[15]** Location System: The ability for the character to be able to travel to different locations in the game.
 - **[15]** Entity System: A class for storing entity data like various stats, including name, health, attack, defense, etc.
 - **[15]** Equipment System: The ability for entities to have equipment, including at least 1 weapon and piece of armor.
     - **[+5]** More types of equipment than just weapons and armor.
@@ -35,5 +35,5 @@ Your Console RPG must have 8 unique systems in the game, each outlined below. On
 - **[15]** Inventory System: The ability for the game to store what items the player has in their inventory.
 - **[15]** Shop System: The ability for the player to store how many coins they have and then be able to buy items in a shop using those coins.
     - **[+5]** Use console colors to indiciate which items the player can or can't afford.
-- **[15]** Serialization System: The ability for the game to save and load the user's data by reading from a file. The user should be able to save and load data at any time.
+- **[15]** Serialization System: The ability for the game to save and load the user's data by reading from a file.
     - **[+5]** At least 3 save slots.
