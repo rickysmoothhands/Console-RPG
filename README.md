@@ -25,7 +25,7 @@ Your Console RPG must have 8 unique systems in the game, each outlined below. On
 
 #### [120 pts.] Mastery Goals
 - **[15]** Location System: The ability for the character to be able to travel to different locations in the game.
-    - **[+5]** A map the player can use to see how each location is connected.
+    - **[+5]** A map the player can use to see each location laid out.
 - **[15]** Entity System: A class for storing entity data like various stats, including name, health, attack, defense, etc.
     - **[+5]** 
 - **[15]** Equipment System: The ability for entities to have equipment, including at least 1 weapon and piece of armor.
