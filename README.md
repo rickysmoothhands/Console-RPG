@@ -11,7 +11,7 @@ March 4th, 2024
 ---
 
 ### Goal
-To create a C# console-based RPG with a battle system, inventory system, map system, etc.
+To create a C# console-based RPG with a battle system, inventory system, map system, etc. https://www.youtube.com/watch?v=9B3pjzYM2cs
 
 ---
 
