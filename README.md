@@ -16,7 +16,7 @@ To create a C# console-based RPG with a battle system, inventory system, map sys
 ---
 
 ### Instructions
-There are a collection of videos on Schoology for you to follow along with in order to create your Console RPG. The videos are put in order of how you should watch them, since some of them build on each other, but generally, I try to keep each one as self-contained as possible. Each one goes over a different aspect of the Console RPG which will be graded separately from each other, as outlined below. If you want to add a story to your Console RPG, feel free, but it won't be part of the grade. I'm looking forward to seeing everyone's at the end of the unit! Also, if you don't feel like you need to follow along with the videos and want to challenge yourself to do at least some things without them, I'm just putting that out there.
+Over 8 days of lessons, we will create our Console RPGs. You are free to put whatever unique spin you want on the project as long as it meets the requirements of what we learn in class. As always, there are some extra credit pieces as well. In lessons, there will be things we don't go over, but I mention are things you still need to do in your Console RPG. This includes things like making sure the user does the right inputs and doesn't break the program. You will be expected to do these during Flex Time since you will be following along during lessons (unless you get ahead, in which case, of course you can do them ahead of time). Have fun!
 
 ---
 
@@ -33,10 +33,10 @@ Your Console RPG must have 8 unique systems in the game, each outlined below. On
 - **[15]** Battle System: The ability for the game to start a battle with the player and various enemies.
     - **[+5]** A different Battle System than just turn-based.
 - **[15]** Item System: A class for storing item information like a name, description, effect, etc.
-    - **[+5]** Using lambdas/delegates to create an expandable Item System.
+    - **[+5]** Using lambdas/delegates (instead of inheritance/polymorphism) to create an expandable Item System.
 - **[15]** Inventory System: The ability for the game to store what items the player has in their inventory.
     - **[+5]** 
 - **[15]** Shop System: The ability for the player to store how many coins they have and then be able to buy items in a shop using those coins.
     - **[+5]** Use console colors to indiciate which items the player can or can't afford.
 - **[15]** Serialization System: The ability for the game to save and load the user's data by reading from a file.
-    - **[+5]** At least 3 save slots.
+    - **[+5]** Support for multiple save slots.
