@@ -25,11 +25,6 @@ Your Console RPG must have 8 unique systems in the game, each outlined below. On
 
 #### [120 pts.] Mastery Goals
 - **[15]** Entity System: A class for storing entity data like various stats, including name, health, attack, defense, etc.
-    - Inheritance
-    - Polymorphism
-    - Composition
-    - Lists
-    - Random
     - **[+5]** More entities than just a player and enemy (maybe NPCs who help you fight?)
 - **[15]** Battle System: The ability for the game to start a battle with the player and various enemies
     - **[+5]** A different Battle System than just turn-based (grid-based, for example)
