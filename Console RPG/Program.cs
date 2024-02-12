@@ -6,7 +6,7 @@ namespace Console_RPG
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Test");
+            Console.WriteLine("hello darkness my old friend");
         }
     }
 }
