@@ -6,18 +6,15 @@
         public int Dexterity;
         public int Strength;
         public int Constitution;
-        public int Wisdom;
-        public int Intelligence;
-        public int Charisma;
+        public int Mind;
+        
 
-        public stats(int dexterity, int strength, int constitution, int wisdom, int intelligence, int charisma)
+        public stats(int dexterity, int strength, int constitution, int mind)
         {
             Dexterity = dexterity;
             Strength = strength;
             Constitution = constitution;
-            Wisdom = wisdom;
-            Intelligence = intelligence;
-            Charisma = charisma;
+            Mind = mind;
         }
     }
 
