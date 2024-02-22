@@ -24,6 +24,7 @@ namespace Console_RPG
             this.stats = stats;
         }
         public abstract Entity ChooseTarget(List<Entity> targets);
-        
+
+        public abstract void DoTurn(List<player> players, List<Enemy>);
     }
 }

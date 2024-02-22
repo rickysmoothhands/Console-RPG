@@ -14,11 +14,9 @@ namespace Console_RPG
           
             player player1 = new player("josh" , 10, 10, new stats(10,10,10,10),1, "fighter");
             player1.ClassPick();
-           Enemy goober = new Enemy("sluge", 5, 0, new stats(5, 10, 10, 0),10);
-            Enemy SPEIDER = new Enemy("tainted one", 5, 0, new stats(12, 10, 10, 0), 10);
-            Enemy GOOBLIN = new Enemy("death stalker", 5, 0, new stats(5, 10, 10, 0), 10);
-            Enemy daemon = new Enemy("The fallen", 5, 0, new stats(5, 10, 10, 15), 10);
+          
 
+            HealthPotionItem potion1 = new HealthPotionItem("Potion 1", "the last of life store for a another time or wasted by man", 10, 10, 20);
 
             Location RuinOTtheLostPeopleGate = new Location("the ruins Gate", "where humanity made it it's last stand");
             Location BrokenTemple = new Location("ruin temple", "the fallen place of a lost God");

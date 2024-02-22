@@ -29,7 +29,7 @@ namespace Console_RPG
             {
                 CharClass = "FIGHTER";
                 Console.WriteLine("You were train in the blade, saddly that will only keep you alive longer");
-                
+
             }
             else if (CharClass == "MAGE")
             {
@@ -45,10 +45,20 @@ namespace Console_RPG
             {
                 Console.WriteLine("Life cant be unlived, choose your past");
                 Console.WriteLine("|FIGHTER| |MAGE| |CLERIC|");
-                ClassPick();
+            }              ClassPick();
             }
 
-            
+            public override void DoTurn(List<player> players, List<Enemy> enemies)
+        {
+
+            Entity target = ChooseTarget(enemies);
         }
-    }
+
+
+
+
+
+
 }
+}
+    
