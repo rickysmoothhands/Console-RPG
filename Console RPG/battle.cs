@@ -20,10 +20,26 @@ namespace Console_RPG
         {
             while (true)
             {// run this code on each of the players
-                foreach(var item in players)
+                foreach(var player in players)
+                {   if(player.currentHP > 0)
+                    {
+
+                        Console.WriteLine(player.name);
+                    } 
+                    
+                }
+
+
+                foreach (var enemy in players)
                 {
-                    Console.WriteLine(item.name)
-                };
+                    if (enemy.currentHP > 0)
+                    {
+
+                        Console.WriteLine(enemy.name);
+                    }
+
+                }
+                
             }
         }
 

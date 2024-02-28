@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Console_RPG
 {
-    class Item
+     abstract class Item
     {
         public string name;
         public string description;
