@@ -23,8 +23,14 @@ namespace Console_RPG
             this.maxMana = mana;
             this.stats = stats;
         }
-        public abstract Entity ChooseTarget(List<Entity> targets);
+        public abstract Entity ChooseTarget(List<Entity> choices);
 
-        public abstract void DoTurn(List<player> players, List<Enemy>);
+        public abstract void Attack(Entity target);
+        public void UseItem(Item item, Entity target)
+        {
+            item.Use(this, target);
+        }
+
+        public abstract void DoTurn(List<player> players, List<Enemy> enemies);
     }
 }

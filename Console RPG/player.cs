@@ -8,6 +8,7 @@ namespace Console_RPG
     {
 
         public static List<Item> Inventory = new List<Item>();
+        public static int CoinCount = 0;
         public int level;
         public string CharClass;
         public player(string name, int hp, int mana, stats stats, int level, string CharClass) : base(name, hp, mana, stats)
@@ -49,6 +50,8 @@ namespace Console_RPG
         {
             Console.WriteLine(this.name + "attacked" + target.name + "!");
         }
+
+       
 
         public void ClassPick()
         {// Player picks From fighter ,mage ,cleric
@@ -92,7 +95,11 @@ namespace Console_RPG
             else if (choice == "ITEM")
             {
                 Item item = ChooseItem(Inventory);
+                Entity target = ChooseTarget(players.Cast<Entity>().ToList());
+                item.Use(this,target);
+                Inventory.Remove(item);
             }
+
         }
 
 
