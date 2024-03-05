@@ -38,4 +38,8 @@ namespace Console_RPG
             Console.WriteLine(target.name + "healed");
         }
     }
+    class swordItem : Item
+    {
+        
+    }
 }
