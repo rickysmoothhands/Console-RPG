@@ -52,5 +52,31 @@ namespace Console_RPG
                 }
             }
         }
+
+        class weapon : Equipment
+        {
+            public int damage;
+            public stats modier;
+
+            public weapon(string name, string description, int shopPrice, int sellPrice, float duralbility, float weight, float rarity, int damge, stats modier) : base(name, description, shopPrice, sellPrice, duralbility, weight, rarity)
+            {
+                this.damage = damage;
+            }
+
+            public override void Use(Entity user, Entity target)
+            {
+                this.isEquipped = !this.isEquipped; // checks and changes if it equipped.
+
+                if (this.isEquipped)
+                {//increase the target's defense if they equip the item.
+                    target.stats.Strength += this.damage;
+                }
+                else
+                {
+                    // decrease the target's defense if they unequip the item.
+                    target.stats.Strength -= this.damage;
+                }
+            }
+        }
     }
 }

@@ -7,12 +7,12 @@ namespace Console_RPG
     class battle : POI
     {
         public List<Enemy> enemies;
-        
+        public bool isResolved;
 
         public battle(List<Enemy> eniemies): base (false)
         {
             this.enemies = enemies;
-              
+            this.isResolved = false;  
         }
 
 

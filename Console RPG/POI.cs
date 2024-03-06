@@ -15,7 +15,7 @@ namespace Console_RPG
 
         public abstract void Resolve(List<player> players)
         {
-
+            throw new NotImplementedException();
         }
     }
 }
