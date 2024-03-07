@@ -13,9 +13,7 @@ namespace Console_RPG
             this.isResolved = isResolved;
         }
 
-        public abstract void Resolve(List<player> players)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract void Resolve(List<player> players);
+       
     }
 }

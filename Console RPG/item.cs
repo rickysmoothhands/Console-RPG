@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace Console_RPG
@@ -38,8 +39,5 @@ namespace Console_RPG
             Console.WriteLine(target.name + "healed");
         }
     }
-    class swordItem : Item
-    {
-        
-    }
+   
 }

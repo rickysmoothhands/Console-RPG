@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Console_RPG
 {
-    class player : Entity
+     abstract class player : Entity
     {
 
         public static List<Item> Inventory = new List<Item>();
@@ -46,7 +46,7 @@ namespace Console_RPG
 
 
 
-        public void Attack(Entity target)
+        public override void Attack(Entity target)
         {
             Console.WriteLine(this.name + "attacked" + target.name + "!");
         }
