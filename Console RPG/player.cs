@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Console_RPG
 {
-     abstract class player : Entity
+     class player : Entity
     {
 
         public static List<Item> Inventory = new List<Item>();
@@ -59,7 +59,8 @@ namespace Console_RPG
             if (CharClass == "FIGHTER")
             {
                 CharClass = "FIGHTER";
-                Console.WriteLine("You were train in the blade, saddly that will only keep you alive longer");
+                Console.WriteLine("You were trained in the blade, saddly that will only keep you alive longer");
+                new stats();
 
             }
             else if (CharClass == "MAGE")
@@ -86,7 +87,7 @@ namespace Console_RPG
             string choice = Console.ReadLine();
 
 
-            if(choice == "Attack")
+            if(choice == "ATTACK")
             {
             Entity target = ChooseTarget(enemies.Cast<Entity>().ToList());
             Attack(target);
