@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
 namespace Console_RPG
 {
-     abstract class Item
+    abstract class Item
     {
         public string name;
         public string description;
@@ -23,21 +22,4 @@ namespace Console_RPG
         public abstract void Use(Entity user, Entity target);
     }
 
-    class HealthPotionItem : Item 
-    {
-
-        public int healAmount;
-
-        public HealthPotionItem(string name, string description, int shopPrice, int sellPrice, int healAmount) : base(name, description,shopPrice,sellPrice)
-        {
-            this.healAmount = healAmount;
-            
-        }
-        public override void Use(Entity user, Entity target)
-        {
-            target.currentHP += this.healAmount;
-            Console.WriteLine(target.name + "healed");
-        }
-    }
-   
 }
