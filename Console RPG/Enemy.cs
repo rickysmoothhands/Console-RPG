@@ -10,17 +10,18 @@ namespace Console_RPG
         public static Enemy SPEIDER = new Enemy("tainted one", 5, 0, new stats(12, 10, 10, 0), 10);
         public static Enemy GOOBLIN = new Enemy("death stalker", 5, 0, new stats(5, 10, 10, 0), 10);
         public static Enemy daemon = new Enemy("The fallen", 5, 0, new stats(5, 10, 10, 15), 10);
-        public int xpOnDrop;
+        public int coreOnDrop;
 
-        public Enemy(string name, int hp, int mana, stats stats, int xpOnDrop) : base(name, hp, mana, stats)
+        public Enemy(string name, int hp, int mana, stats stats, int coreOnDrop) : base(name, hp, mana, stats)
         {
-            this.xpOnDrop = xpOnDrop;
+            this.coreOnDrop = coreOnDrop;
 
         }
 
         public override Entity ChooseTarget(List<Entity> choices)
         {
             Random random = new Random();
+
 
             for (int i = 0; i < choices.Count; i++)
             {
@@ -30,10 +31,13 @@ namespace Console_RPG
 
 
             int index = Convert.ToInt32(Console.ReadLine());
-            return choices[Index];
+            return choices[Index]
+            return choices[random.Next(0, choices.Count)];
+      
+
         }
         
-        public void Attack(Entity target)
+        public override void Attack(Entity target)
         {
             Console.WriteLine(this.name + "attacked" + target.name + "!");
         }
@@ -41,7 +45,7 @@ namespace Console_RPG
         public override void DoTurn(List<player> players, List<Enemy> enemies)
         {
 
-            Entity target = ChooseTarget(player.Cast<Entity>().ToList());
+            Entity target = ChooseTarget(players.Cast<Entity>().ToList());
             Attack(target);
         }
     }

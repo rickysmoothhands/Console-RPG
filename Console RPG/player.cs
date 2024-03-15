@@ -4,10 +4,11 @@ using System.Linq;
 
 namespace Console_RPG
 {
-    class player : Entity
+     class player : Entity
     {
 
         public static List<Item> Inventory = new List<Item>();
+        public static int CoinCount = 0;
         public int level;
         public string CharClass;
         public player(string name, int hp, int mana, stats stats, int level, string CharClass) : base(name, hp, mana, stats)
@@ -45,10 +46,12 @@ namespace Console_RPG
 
 
 
-        public void Attack(Entity target)
+        public override void Attack(Entity target)
         {
             Console.WriteLine(this.name + "attacked" + target.name + "!");
         }
+
+       
 
         public void ClassPick()
         {// Player picks From fighter ,mage ,cleric
@@ -56,7 +59,8 @@ namespace Console_RPG
             if (CharClass == "FIGHTER")
             {
                 CharClass = "FIGHTER";
-                Console.WriteLine("You were train in the blade, saddly that will only keep you alive longer");
+                Console.WriteLine("You were trained in the blade, saddly that will only keep you alive longer");
+                new stats();
 
             }
             else if (CharClass == "MAGE")
@@ -83,7 +87,7 @@ namespace Console_RPG
             string choice = Console.ReadLine();
 
 
-            if(choice == "Attack")
+            if(choice == "ATTACK")
             {
             Entity target = ChooseTarget(enemies.Cast<Entity>().ToList());
             Attack(target);
@@ -92,7 +96,11 @@ namespace Console_RPG
             else if (choice == "ITEM")
             {
                 Item item = ChooseItem(Inventory);
+                Entity target = ChooseTarget(players.Cast<Entity>().ToList());
+                item.Use(this,target);
+                Inventory.Remove(item);
             }
+
         }
 
 

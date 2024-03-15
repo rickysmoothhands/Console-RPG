@@ -1,45 +1,54 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Console_RPG
 {
-    class battle
+    class battle : POI
     {
         public List<Enemy> enemies;
-        public bool isResolved;
-
-        public battle(List<Enemy> eniemies)
+       
+       
+        public battle(List<Enemy> eniemies): base (false)
         {
             this.enemies = enemies;
-              this.isResolved = false;
+              
         }
 
 
-        public void Resolve(List<player> players)
+        public  override void Resolve(List<player> players)
         {
             while (true)
             {// run this code on each of the players
-                foreach(var player in players)
-                {   if(player.currentHP > 0)
-                    {
-
-                        Console.WriteLine(player.name);
-                    } 
-                    
-                }
-
-
-                foreach (var enemy in players)
+                foreach(var item in players)
                 {
-                    if (enemy.currentHP > 0)
-                    {
-
-                        Console.WriteLine(enemy.name);
-                    }
-
+                    Console.WriteLine("It is" + item.name + "'s turn");
+                    item.DoTurn(players, enemies);
+             
                 }
-                
+
+
+                foreach (var item in enemies)
+                {
+                        Console.WriteLine("It is" + item.name + "'s turn");
+                        item.DoTurn(players, enemies);
+                   
+                }
+
+                //loseing 
+                if (players.TrueForAll(player => player.currentHP <= 0)) 
+                {
+                    Console.WriteLine("one more will rest agian");
+                    break;
+                }
+                //wo
+                if (players.TrueForAll(Enemy => Enemy.currentHP <= 0))
+                {
+                    Console.WriteLine("you saved yourself by dooming another");
+                    break;
+                }
+                Console.WriteLine("one story ends another contenues");
             }
         }
 
