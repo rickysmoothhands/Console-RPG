@@ -8,13 +8,13 @@ namespace Console_RPG
     class Location
     {
 
-        public static Location RuinOTtheLostPeopleGate = new Location("the ruins Gate", "where humanity made it it's last stand");
+        public static Location RuinOftheLostPeopleGate = new Location("the ruins Gate", "where humanity made it it's last stand");
         public static Location BrokenTemple = new Location("ruin temple", "the fallen place of a lost God", new battle(new List<Enemy>() {Enemy.goober}));
         public static Location lostHome = new Location("lost home ", "the space of a abandon family");
         public static Location EntraceToCrpyt = new Location("rusty doors to an old crypt", "what did this door hold behind it");
         public static Location Crpytspassages = new Location("maze like walk ways line with the dead's grave", "this was a place to lay down the dead when they were repected",new battle(new List<Enemy>() {Enemy.SPEIDER}));
-        public static Location;
-  
+        RuinOftheLostPeopleGate.SetNearByLocations(north,losthome,south,west);
+
 
         public string name;
         public string description;
