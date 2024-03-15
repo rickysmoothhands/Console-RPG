@@ -25,6 +25,7 @@ namespace Console_RPG
             for (int i = 0; i < choices.Count; i++)
             {
                 Console.WriteLine(choices[i]).name);
+            
 
 
 
